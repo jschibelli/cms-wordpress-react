@@ -14,11 +14,14 @@ module.exports = {
   images: {
     remotePatterns: [
       {
-        protocol: protocol.slice(0, -1),
-        hostname,
-        port,
-        pathname: `${pathname}/**`,
+        protocol: protocol.slice(0, -1), // Remove the trailing colon from the protocol
+        hostname, // Hostname from the WordPress API URL
+        port, // Port from the WordPress API URL
+        pathname: `${pathname}/**`, // Pathname from the WordPress API URL, allowing all paths
       },
+      { protocol: "https", hostname: "https://vfo.fzi.mybluehost.me/" },
+      { protocol: "https", hostname: "secure.gravatar.com" },
+      { protocol: "https", hostname: "i0.wp.com" },
     ],
   },
 };
