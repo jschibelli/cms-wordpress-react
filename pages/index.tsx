@@ -15,7 +15,7 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>{`IntraWeb is more than just technology`}</title>
+        <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
       </Head>
       <Container>
         <Intro />
