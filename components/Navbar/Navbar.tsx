@@ -51,13 +51,13 @@ export default function NavbarComponent() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page" color="warning">
-            Customers
+          <Link href="/services" aria-current="page" color="warning">
+            Plans
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link color="foreground" href="/">
+            Blog
           </Link>
         </NavbarItem>
       </NavbarContent>

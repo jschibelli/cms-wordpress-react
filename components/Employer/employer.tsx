@@ -15,7 +15,7 @@ const Employers = () => {
 
 function formatDateString(ymdString: string | undefined) {
   if (!ymdString) {
-    return "Date not provided"; // Or any placeholder text you prefer
+    return "Present"; // Or any placeholder text you prefer
   }
 
   // Parse the string
@@ -47,15 +47,15 @@ function formatDateString(ymdString: string | undefined) {
                     <span className={styles.lineLeft}></span>
                     <div className={styles.year}>
                       <span className={styles.to}>
-                        {formatDateString(employer.acf?.end_date) ||
+                        {formatDateString(employer.acf.end_date) ||
                           "Present"}
                       </span>
                       <span className={styles.from}>
-                        {formatDateString(employer.acf?.start_date)}
+                        {formatDateString(employer.acf.start_date)}
                       </span>
                     </div>
                     <div className={styles.content}>
-                      <h4 className={styles.title}>{employer.acf.position}</h4>
+                      <h4 className={styles.title}>{employer.acf.job_title}</h4>
                       <h5 className={styles.subtitle}>
                         {employer.title.rendered} - {employer.acf.location}
                       </h5>
@@ -63,7 +63,7 @@ function formatDateString(ymdString: string | undefined) {
                         <div
 
                           dangerouslySetInnerHTML={{
-                            __html: employer.acf?.job_description || "",
+                            __html: employer.content.rendered|| "",
                           }}
                         />
                       </div>
