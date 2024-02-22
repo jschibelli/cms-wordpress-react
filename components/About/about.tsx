@@ -3,11 +3,11 @@ import styles from "./about.module.scss";
 import Container from "../container";
 import Employers from "../Employer/employer";
 import Button from "../Button/button";
-import Layout from "../layout";
+
 
 const AboutPage: React.FC = () => {
   return (
-    <Layout>
+
       <Container>
         <div className={styles.resume}>
           <div className="max-w-7xl mx-auto">
@@ -32,7 +32,6 @@ const AboutPage: React.FC = () => {
         <Employers />
 
       </Container >
-        </Layout>
   );
 };
 

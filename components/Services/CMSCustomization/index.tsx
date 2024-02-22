@@ -46,7 +46,7 @@ const Cmscustomization: React.FC = () => {
                       </h4>
                     </div>
                     <div className="card-body">
-                      <h1 className="card-title pricing-card-title " className={styles.cardTitle}>
+                      <h1 className="card-title pricing-card-title ">
                         {service.acf?.pricing}
                         <small className="text-muted fw-light">+</small>
                       </h1>
