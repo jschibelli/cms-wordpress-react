@@ -42,36 +42,36 @@ const Maintanence: React.FC = () => {
       {/* Loop through the services in the "Maintenance" category */}
       {maintanence.map((service) => (
         <div key={service.id}>
-          <div className="my-1">
-            <div className="row row-cols-1 row-cols-md-1 mb-3 text-center">
-              <div className="col">
-                <div className="card mb-4 rounded-3 shadow-sm">
-                  <div className={styles.cardBody}>
-                    <div className="card-header py-3">
-                      <h4 className="my-0 fw-normal">
-                        {service.title.rendered}
-                      </h4>
-                    </div>
-                    <div className="card-body">
-                      <h1 className="card-title pricing-card-title">
-                        {service.acf.price}
-                        <small className="text-muted fw-light">/mo</small>
-                      </h1>
-                      <div
-                        className="mt-3 mb-4"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content.rendered || "",
-                        }}
-                      ></div>
-                      <Button color="primary" variant="bordered" size="lg">
-                        Learn More
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+          <Card className="max-w-[400px] card">
+            <CardHeader className="flex gap-3">
+              <div className="flex flex-col">
+                <h2 className="text-md">{service.title.rendered}</h2>
+                <p className="text-small text-default-500">nextui.org</p>
               </div>
-            </div>
-          </div>
+            </CardHeader>
+            <Divider />
+            <CardBody>
+              <div className={styles.cardBody}>
+                <h1 className="card-title pricing-card-title">
+                  {service.acf?.price}
+                  <small className="text-muted fw-light">+</small>
+                </h1>
+                <div
+                  className="mt-3 mb-4"
+                  dangerouslySetInnerHTML={{
+                    __html: service.content.rendered || "",
+                  }}
+                ></div>
+              </div>
+            </CardBody>
+            <Divider />
+            <CardFooter>
+              <Button color="primary" variant="bordered">
+                Learn More
+              </Button>
+            </CardFooter>
+          </Card>
+
         </div>
       ))}
     </div>
