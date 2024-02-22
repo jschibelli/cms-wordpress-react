@@ -13,19 +13,26 @@ const Employers = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-function formatDateString(ymdString) {
-  // Check if ymdString is null or undefined (or any falsy value)
+function formatDateString(ymdString: string | undefined) {
   if (!ymdString) {
-    return "Date not provided"; // Or any placeholder you prefer
+    return "Date not provided"; // Or any placeholder text you prefer
   }
 
-  // Proceed as before if ymdString is valid
+  // Parse the string
   const year = ymdString.substring(0, 4);
   const month = ymdString.substring(4, 6);
   const day = ymdString.substring(6, 8);
 
+  // Create a Date object
   const date = new Date(`${year}-${month}-${day}`);
-  const options = { year: "numeric", month: "long" };
+
+  // Specify options with explicit types
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric", // TypeScript now knows this is "numeric"
+    month: "long", // and this is "long"
+  };
+
+  // Format the date
   return date.toLocaleDateString("en-US", options);
 }
 
