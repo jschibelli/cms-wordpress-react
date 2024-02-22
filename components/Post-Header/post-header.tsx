@@ -1,8 +1,8 @@
-import Avatar from "./avatar";
-import Date from "./date";
-import CoverImage from "./cover-image";
-import PostTitle from "./post-title";
-import Categories from "./categories";
+import Avatar from "../Avatar/avatar";
+import Date from "../Date/date";
+import CoverImage from "../Cover-image/cover-image";
+import PostTitle from "../Post-Title/post-title";
+import Categories from "../Categories/categories";
 
 export default function PostHeader({
   title,
