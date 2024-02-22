@@ -10,7 +10,7 @@ const Plans: React.FC = () => {
     <Container>
       <div className="max-w-7xl mx-auto">
         <h2 className="display-5 fw-normal text-center">Maintanence Plans</h2>
-        <MaintenancePlans
+        <MaintenancePlans />
         <h2 className="display-5 fw-normal text-center">Development</h2>
         <Development />
       </div>
