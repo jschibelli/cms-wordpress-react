@@ -1,8 +1,11 @@
 import AboutPage from "../components/About/about";
+import Container from "../components/container";
 
 const About = () => {
   return (
-    <AboutPage />
+    <Container>
+      <AboutPage />
+    </Container>
   );
 };
 

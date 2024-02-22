@@ -51,7 +51,7 @@ export default function NavbarComponent() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/services" aria-current="page" color="warning">
+          <Link href="/plans" aria-current="page" color="warning">
             Plans
           </Link>
         </NavbarItem>
