@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./about.module.scss";
 import Container from "../container";
-import Layout from "../Layout/layout";
+import Layout from "../layout";
 import Employers from "../Employer/employer";
 import Button from "../Button/button";
 

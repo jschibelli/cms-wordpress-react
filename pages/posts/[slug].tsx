@@ -8,7 +8,7 @@ import MoreStories from "../../components/More-Stories/more-stories";
 import Header from "../../components/Header/header";
 import PostHeader from "../../components/Post-Header/post-header";
 import SectionSeparator from "../../components/Section-Seperator/section-separator";
-import Layout from "../../components/Layout/layout";
+import Layout from "../../components/layout";
 import PostTitle from "../../components/Post-Title/post-title";
 import Tags from "../../components/Tags/tags";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";

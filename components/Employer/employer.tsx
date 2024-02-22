@@ -5,7 +5,7 @@ const Employers = () => {
   const [employers, setEmployers] = useState([]);
 
   useEffect(() => {
-    fetch("https://schibelli.com/wp-json/wp/v2/employer")
+    fetch("https://vfo.fzi.mybluehost.me/wp-json/wp/v2/employer")
       .then((response) => response.json())
       .then((data) => {
         setEmployers(data);
@@ -13,19 +13,22 @@ const Employers = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  function formatDateString(ymdString) {
-    // Parse the string
-    const year = ymdString.substring(0, 4);
-    const month = ymdString.substring(4, 6);
-    const day = ymdString.substring(6, 8);
-
-    // Create a Date object
-    const date = new Date(`${year}-${month}-${day}`);
-
-    // Format the date
-    const options = { year: "numeric", month: "long" };
-    return date.toLocaleDateString("en-US", options);
+function formatDateString(ymdString) {
+  // Check if ymdString is null or undefined (or any falsy value)
+  if (!ymdString) {
+    return "Date not provided"; // Or any placeholder you prefer
   }
+
+  // Proceed as before if ymdString is valid
+  const year = ymdString.substring(0, 4);
+  const month = ymdString.substring(4, 6);
+  const day = ymdString.substring(6, 8);
+
+  const date = new Date(`${year}-${month}-${day}`);
+  const options = { year: "numeric", month: "long" };
+  return date.toLocaleDateString("en-US", options);
+}
+
 
   return (
         <div className={styles.employer}>
