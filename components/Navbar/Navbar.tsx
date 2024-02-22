@@ -39,7 +39,11 @@ export default function NavbarComponent() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <p className="font-bold text-inherit">IntraWeb Technology</p>
+          <p className="font-bold text-inherit">
+            <Link href="/" aria-current="page">
+              IntraWeb Technology
+            </Link>
+          </p>
         </NavbarBrand>
         <NavbarItem>
           <Link color="foreground" href="/about">

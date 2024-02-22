@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { GetStaticProps } from "next";
-import Container from "../components/Container/container";
+import Container from "../components/container";
 import MoreStories from "../components/More-Stories/more-stories";
 import HeroPost from "../components/Hero-Post/hero-post";
 import Intro from "../components/Intro/intro";
@@ -15,7 +15,7 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+        <title>{`IntraWeb is more than just technology`}</title>
       </Head>
       <Container>
         <Intro />

@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./about.module.scss";
 import Container from "../container";
-import Layout from "../layout";
-import Button from "react-bootstrap/Button";
-import Testimonials from "../Testimonials/testimonials";
-import Employers from "../Employer";
+import Layout from "../Layout/layout";
+import Employers from "../Employer/employer";
+import Button from "../Button/button";
 
 const AboutPage: React.FC = () => {
   return (
@@ -20,7 +19,6 @@ const AboutPage: React.FC = () => {
                   <Button
                     radius="full"
                     variant="outline-secondary"
-                    disableRipple
                     className="relative overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0"
                     size="lg"
                   >
@@ -32,7 +30,7 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
         <Employers />
-        <Testimonials />
+
       </Container>
     </Layout>
   );

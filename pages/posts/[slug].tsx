@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import { GetStaticPaths, GetStaticProps } from "next";
-import Container from "../../components/Container/container";
+import Container from "../../components/container";
 import PostBody from "../../components/Post-Body/post-body";
 import MoreStories from "../../components/More-Stories/more-stories";
 import Header from "../../components/Header/header";
