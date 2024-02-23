@@ -42,7 +42,7 @@ const Maintanence: React.FC = () => {
       {/* Loop through the services in the "Maintenance" category */}
       {maintanence.map((service) => (
         <div key={service.id}>
-          <Card className="max-w-[400px] card">
+          <Card className="min-w-[400px]">
             <CardHeader className="flex gap-3">
               <div className="flex flex-col">
                 <h2 className="text-md">{service.title.rendered}</h2>
