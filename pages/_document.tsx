@@ -10,7 +10,6 @@ export default function Document() {
       <body>
         <NextUIProvider>
           <NavbarComponent />
-          <ResponsiveExample />
           <Main />
           <NextScript />
         </NextUIProvider>
