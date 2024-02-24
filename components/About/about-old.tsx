@@ -5,7 +5,7 @@ import Employers from "../Employer/employer";
 import Button from "../Button/button";
 
 
-const AboutPage: React.FC = () => {
+const AboutPage1: React.FC = () => {
   return (
 
       <Container>
@@ -38,4 +38,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default AboutPage1;
