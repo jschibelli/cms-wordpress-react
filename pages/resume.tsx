@@ -1,11 +1,12 @@
 
-import Employers from "../components/Employer/employer";
+import React from "react";
 import Container from "../components/container";
+import ResumePage from "../components/Pages/Resume/resume";
 
 const Resume = () => {
   return (
     <Container>
-      <Employers />
+      <ResumePage />
     </Container>
   );
 };
