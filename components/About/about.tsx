@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const AboutPage = () => {
-  const [about, setAbout] = useState(null); // Initialize about as null or an empty object
+  const [about, setAbout] = useState(null); // Initialize about as null or an empty object.
 
   useEffect(() => {
     fetch("https://vfo.fzi.mybluehost.me/wp-json/wp/v2/pages/1498")
