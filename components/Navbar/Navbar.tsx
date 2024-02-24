@@ -33,7 +33,7 @@ export default function NavbarComponent() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="font-bold text-inherit">SCHIBELLI</p>
         </NavbarBrand>
       </NavbarContent>
 
