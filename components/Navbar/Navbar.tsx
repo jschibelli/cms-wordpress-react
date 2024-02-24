@@ -41,7 +41,7 @@ export default function NavbarComponent() {
         <NavbarBrand>
           <p className="font-bold text-inherit">
             <Link href="/" aria-current="page">
-              IntraWeb Technology
+              SCHIBELLI.com
             </Link>
           </p>
         </NavbarBrand>
