@@ -1,5 +1,5 @@
 import React from 'react';
-import './HireMe.module.scss';
+import './hireMe.module.scss';
 import MaintenancePlans from '../../Plans/Maintanence/maintanence';
 
 const HireMe = () => {
