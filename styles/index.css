@@ -3,7 +3,7 @@
 /* Write your own custom base styles here */
 
 body.dark-mode {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     h1,
     h2,

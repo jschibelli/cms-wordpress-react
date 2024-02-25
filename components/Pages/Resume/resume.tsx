@@ -11,9 +11,14 @@ const ResumePage = () => {
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">Full-Stack Engineer / Ai Specialist</p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <Button color="primary" variant="ghost">
-                Download Resume
-              </Button>
+              <div id="choose" className="w-auto mt-10 px-6">
+                <a
+                  href="#"
+                  className="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
+                >
+                  Download Resume
+                </a>
+              </div>
             </div>
           </div>
         </div>

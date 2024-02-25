@@ -3,8 +3,8 @@ import React from "react";
 const Pricing = () => {
   return (
     <div className="hire-me">
-      <div className="max-w-5xl mx-auto">
-<div className="antialiased w-full h-full bg-transparent text-gray-400 font-inter p-10">
+      <div className="max-w-1xl mx-auto">
+<div className="antialiased w-full h-full bg-black text-gray-400 font-inter p-10">
     <div className="container px-4 mx-auto">
       <div>
         <div id="title" className="text-center my-10">
@@ -53,7 +53,7 @@ const Pricing = () => {
                   <li>2048MB bandwith</li>
                   <li>Subdomain included</li>
                 </ul>
-                <div id="choose" className="w-full mt-10 px-6">
+                <div id="choose" className="w-auto mt-10 px-6">
                   <a
                     href="#"
                     className="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
