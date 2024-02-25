@@ -56,13 +56,18 @@ export default function NavbarComponent() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/plans" aria-current="page" color="warning">
+          <Link href="/hire" aria-current="page" color="warning">
             Hire Me
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/">
             Blog
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/contact">
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
