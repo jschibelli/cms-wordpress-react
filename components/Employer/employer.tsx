@@ -7,7 +7,9 @@ const Employers = () => {
   const [employers, setEmployers] = useState([]);
 
   useEffect(() => {
-    fetch("https://vfo.fzi.mybluehost.me/wp-json/wp/v2/employer")
+    fetch(
+      "https://intrawebtech.com/wp-json/wp/v2/employer"
+    )
       .then((response) => response.json())
       .then((data) => {
         setEmployers(data);

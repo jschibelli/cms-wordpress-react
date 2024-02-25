@@ -18,7 +18,7 @@ const Maintanence: React.FC = () => {
 
   useEffect(() => {
 
-  const fetchUrl = `https://vfo.fzi.mybluehost.me/wp-json/wp/v2/service`;
+  const fetchUrl = `https://intrawebtech.com/wp-json/wp/v2/service`;
 
   fetch(fetchUrl)
     .then((response) => response.json())
