@@ -95,10 +95,14 @@ li.employerList {
     padding-top: 2rem;
 }
 
-.timeline .content {
-    margin-left: 10px;
+.content {
+    margin-left: 1.2rem;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.info {
+    margin-left: 1.2rem;
 }
 
 .timeline .content h4 {
@@ -119,10 +123,6 @@ li.employerList {
     font-size: 12px;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-}
-
-.employer .timeline .content .info {
-    margin-bottom: 0px;
 }
 
 .employer_list_item {
