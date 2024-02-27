@@ -170,17 +170,13 @@ const Pricing = () => {
                     >
                       <ul>
                         <li>Weekly software updates</li>
-                        <li>Daily backups with immediate recovery support</li>
+                        <li>Daily backups w/ recovery support</li>
                         <li>Weekly performance checks</li>
                         <li>
                           24/7 priority support via email, phone, and chat
                         </li>
                         <li>Up to 20 hours of maintenance </li>
-                        <li>Content updates and minor feature additions</li>
-                        <li>
-                          Emergency support with a 2-hour response time for
-                          critical issues
-                        </li>
+
                       </ul>
                       <div id="choose" className="w-full mt-10 px-6">
                         <a
