@@ -23,6 +23,9 @@ body.dark-mode {
             color: #666;
         }
     }
+    .lead {
+        font-size: 1.3rem;
+    }
 }
 
 h1 {

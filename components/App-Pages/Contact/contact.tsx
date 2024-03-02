@@ -23,6 +23,22 @@ export default function App() {
 
   return (
     <div className="contact-page">
+      <div className="resume-page">
+        <div className="max-w-5xl mx-auto">
+          <div className="px-4 py-5 my-5 text-center">
+            <h1 className="display-5 fw-bold h1">
+              Let's Create Success Together!
+            </h1>
+            <div className="col-lg-6 mx-auto">
+              <p className="lead mb-4">
+                Your thoughts and inquiries are important, and we're committed
+                to providing you with the support and information you need. Fill
+                out the form below, drop us an email, or give us a call — we're here and eager to hear from you. Let's connect and make great things happen together!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-2 gap-4">
           <div>
@@ -71,16 +87,14 @@ export default function App() {
               </DropdownMenu>
             </Dropdown>
             <div className="w-full flex flex-col gap-4">
-                <div
-                  className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4 py-6"
-                >
-                  <Input type="name" label="Name" />
-                  <Input
-                    type="email"
-                    label="Email"
-                    placeholder="Enter Corporate Email"
-                  />
-                </div>
+              <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4 py-6">
+                <Input type="name" label="Name" />
+                <Input
+                  type="email"
+                  label="Email"
+                  placeholder="Enter Corporate Email"
+                />
+              </div>
             </div>
             <div>
               <Textarea
