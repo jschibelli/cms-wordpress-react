@@ -1,5 +1,5 @@
 
-import HireMe from "../components/Pages/HireMe/hireMe";
+import HireMe from "../components/App-Pages/HireMe/hireMe";
 import Container from "../components/container";
 
 const Hire = () => {

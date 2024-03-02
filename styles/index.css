@@ -4,7 +4,7 @@
 
 body.dark-mode {
     background-color: #000;
-    color: #fff;
+    color: #666;
     h1,
     h2,
     h3,
@@ -16,6 +16,11 @@ body.dark-mode {
     nav {
         a {
             color: #fff;
+        }
+    }
+    .contact-page {
+        ul {
+            color: #666;
         }
     }
 }

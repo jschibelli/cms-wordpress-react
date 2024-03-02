@@ -1,5 +1,5 @@
 
-import Contact from "../components/Pages/Contact/contact";
+import Contact from "../components/App-Pages/Contact/contact";
 import Container from "../components/container";
 
 const ContactPage = () => {
