@@ -76,7 +76,7 @@ export default function NavbarComponents() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu isOpen={isMenuOpen}>
+      <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={index}>
             <Link
