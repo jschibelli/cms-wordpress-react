@@ -4,7 +4,7 @@ import Container from "../components/container";
 import MoreStories from "../components/More-Stories/more-stories";
 import HeroPost from "../components/Hero-Post/hero-post";
 import Intro from "../components/Intro/intro";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import { getAllPostsForHome } from "../lib/api";
 import { CMS_NAME } from "../lib/constants";
 

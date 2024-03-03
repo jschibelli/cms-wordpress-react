@@ -1,12 +1,16 @@
 
 import Contact from "../components/App-Pages/Contact/contact";
+import Footer from "../components/Footer/footer";
 import Container from "../components/container";
+import Layout from "../components/Layout/layout";
 
 const ContactPage = () => {
   return (
-    <Container>
-      <Contact />
-    </Container>
+    <Layout>
+      <Container>
+        <Contact />
+      </Container>
+    </Layout>
   );
 };
 

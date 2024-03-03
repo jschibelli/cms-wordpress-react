@@ -2,6 +2,7 @@ import { Html, Head, NextScript, Main } from "next/document";
 import { NextUIProvider } from "@nextui-org/react";
 import NavbarComponent from "../components/Navbar/Navbar";
 import { useRouter } from "next/navigation";
+import Footer from "../components/Footer/footer";
 
 export default function Document() {
 

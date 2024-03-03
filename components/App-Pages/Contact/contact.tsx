@@ -22,6 +22,7 @@ export default function App() {
   const variants = ["flat"];
 
   return (
+
     <div className="contact-page">
       <div className="resume-page">
         <div className="max-w-5xl mx-auto">
