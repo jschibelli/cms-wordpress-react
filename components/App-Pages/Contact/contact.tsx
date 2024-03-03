@@ -8,7 +8,10 @@ import {
   Button,
   Input,
   Textarea,
+  Select,
+  SelectItem,
 } from "@nextui-org/react";
+import { industry } from "./data";
 
 export default function App() {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["text"]));
@@ -22,7 +25,6 @@ export default function App() {
   const variants = ["flat"];
 
   return (
-
     <div className="contact-page">
       <div className="resume-page">
         <div className="max-w-5xl mx-auto">
@@ -34,15 +36,17 @@ export default function App() {
               <p className="lead mb-4">
                 Your thoughts and inquiries are important, and we're committed
                 to providing you with the support and information you need. Fill
-                out the form below, drop us an email, or give us a call — we're here and eager to hear from you. Let's connect and make great things happen together!
+                out the form below, drop us an email, or give us a call — we're
+                here and eager to hear from you. Let's connect and make great
+                things happen together!
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
+        <div className="flex flex-wrap -mx-1">
+          <div className="w-full md:w-1/2 px-4">
             <h1 className="text-lg font-bold">
               Contact us for a free consultation
             </h1>
@@ -59,36 +63,20 @@ export default function App() {
               </li>
             </ul>
           </div>
-          <div className="dropdown_items">
-            <Dropdown>
-              <DropdownTrigger>
-                <Button variant="shadow" className="capitalize w-full">
-                  Select your project type:*
-                </Button>
-              </DropdownTrigger>
-              <DropdownMenu
-                aria-label="Single selection example"
-                variant="flat"
-                disallowEmptySelection
-                selectionMode="single"
-                selectedKeys={selectedKeys}
-              >
-                <DropdownItem key="healthcare" className="li">
-                  Healthcare
-                </DropdownItem>
-                <DropdownItem key="financial_services" className="li">
-                  Financial Services
-                </DropdownItem>
-                <DropdownItem key="e_commerce" className="li">
-                  e-Commerce
-                </DropdownItem>
-                <DropdownItem key="media" className="li">
-                  Media
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-            <div className="w-full flex flex-col gap-4">
-              <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4 py-6">
+
+          <div className="w-full md:w-1/2 px-2">
+            <Select
+              items={industry}
+              label="Select your industry:*"
+              placeholder=""
+              className="max-w-full"
+            >
+              {(industry) => (
+                <SelectItem key={industry.value}>{industry.label}</SelectItem>
+              )}
+            </Select>
+            <div className="max-w-full flex flex-col gap-4">
+              <div className="flex flex-wrap md:flex-nowrap md:mb-0 gap-4 py-6">
                 <Input type="name" label="Name" />
                 <Input
                   type="email"
@@ -101,7 +89,7 @@ export default function App() {
               <Textarea
                 label="Description"
                 placeholder="Enter your description"
-                className="w-full pb-4"
+                className="max-w-full"
               />
             </div>
           </div>
