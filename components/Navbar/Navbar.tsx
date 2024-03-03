@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -11,24 +11,28 @@ import {
   // Button,
 } from "@nextui-org/react";
 
-export default function NavbarComponent() {
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
+export default function NavbarComponents() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const menuItems = [
+      { label: "About", href: "/about" },
+      { label: "Resume", href: "/resume" },
+      { label: "Hire Me", href: "/hire" },
+      { label: "Blog", href: "/" },
+      { label: "Contact", href: "/contact" },
+      // Add other menu items here as needed
+    ];
 
   return (
-    <Navbar disableAnimation isBordered>
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle />
+        <NavbarMenuToggle
+          onClick={() => {
+            console.log("Current state:", isMenuOpen); // This line logs the state to the console.
+            setIsMenuOpen(!isMenuOpen);
+          }}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
@@ -72,33 +76,16 @@ export default function NavbarComponent() {
         </NavbarItem>
       </NavbarContent>
 
-      {/* <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="warning" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent> */}
-
-      <NavbarMenu>
+      <NavbarMenu isOpen={isMenuOpen}>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={index}>
             <Link
               className="w-full"
-              color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              href="#"
-              size="lg"
+              color="foreground"
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)} // Close the menu when a link is clicked
             >
-              {item}
+              {item.label}
             </Link>
           </NavbarMenuItem>
         ))}
