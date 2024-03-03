@@ -47,9 +47,8 @@ export default function App() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-wrap -mx-1">
           <div className="w-full md:w-1/2 px-4">
-            <h1 className="text-lg font-bold">
-              Contact us for a free consultation
-            </h1>
+            <h3 className="font-bold">Contact us for a free consultation</h3>
+            <h5>What happens Next?</h5>
             <ul>
               <li>
                 An expert contacts you after having analyzed your requirements;
@@ -64,7 +63,7 @@ export default function App() {
             </ul>
           </div>
 
-          <div className="w-full md:w-1/2 px-2">
+          <div className="w-full md:w-1/2 px-2 pt-10">
             <Select
               items={industry}
               label="Select your industry:*"
@@ -75,8 +74,8 @@ export default function App() {
                 <SelectItem key={industry.value}>{industry.label}</SelectItem>
               )}
             </Select>
-            <div className="max-w-full flex flex-col gap-4">
-              <div className="flex flex-wrap md:flex-nowrap md:mb-0 gap-4 py-6">
+            <div className="max-w-full flex flex-col gap-2">
+              <div className="flex flex-wrap md:flex-nowrap md:mb-0 gap-6 py-6">
                 <Input type="name" label="Name" />
                 <Input
                   type="email"
@@ -84,13 +83,18 @@ export default function App() {
                   placeholder="Enter Corporate Email"
                 />
               </div>
-            </div>
-            <div>
-              <Textarea
-                label="Description"
-                placeholder="Enter your description"
-                className="max-w-full"
-              />
+              <div>
+                <Textarea
+                  label="Description"
+                  placeholder="Enter your description"
+                  className="max-w-full"
+                />
+              </div>
+              <div>
+                <Button color="primary" variant="ghost">
+                  Submit
+                </Button>
+              </div>
             </div>
           </div>
         </div>
