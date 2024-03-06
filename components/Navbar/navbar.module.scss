@@ -1,0 +1,43 @@
+/* styles/components/Navbar.module.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul {
+        flex-direction: column;
+        width: 100%;
+        display: $ {
+            props=>(props.isOpen ? 'flex': 'none')
+        }
+        ;
+    }
+    li {
+        margin: 10px 0;
+    }
+}
