@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styles from "./Navbar.module.scss";
+import styles from "./navbar.module.scss";
 import {
   Navbar,
   NavbarBrand,
