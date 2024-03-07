@@ -49,7 +49,7 @@ export default function NavbarComponent() {
         >
           <NavbarBrand>
             <SchibelliLogo />
-            <p className="font-bold text-inherit">
+            <p className="font-bold text-inherit mb-0">
               <Link href="/" aria-current="page">
                 SCHIBELLI
               </Link>
