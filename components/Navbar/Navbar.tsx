@@ -39,7 +39,7 @@ export default function NavbarComponent() {
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
             <SchibelliLogo />
-            <p className="font-bold text-inherit">SCHIBELLI</p>
+            {/* <p className="font-bold text-inherit">SCHIBELLI</p> */}
           </NavbarBrand>
         </NavbarContent>
 
@@ -51,7 +51,7 @@ export default function NavbarComponent() {
             <SchibelliLogo />
             <p className="font-bold text-inherit">
               <Link href="/" aria-current="page">
-                SCHIBELLI.com
+                SCHIBELLI
               </Link>
             </p>
           </NavbarBrand>
