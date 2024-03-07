@@ -11,6 +11,7 @@ import {
   NavbarItem,
   Link,
 } from "@nextui-org/react";
+import { SchibelliLogo } from "../AcmeLogo/AcmeLogo";
 
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -37,6 +38,7 @@ export default function NavbarComponent() {
         </NavbarContent>
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
+            <SchibelliLogo />
             <p className="font-bold text-inherit">SCHIBELLI</p>
           </NavbarBrand>
         </NavbarContent>
@@ -46,6 +48,7 @@ export default function NavbarComponent() {
           justify="center"
         >
           <NavbarBrand>
+            <SchibelliLogo />
             <p className="font-bold text-inherit">
               <Link href="/" aria-current="page">
                 SCHIBELLI.com
