@@ -4,7 +4,7 @@ const Pricing = () => {
   return (
     <div className="hire-me">
       <div className="max-w-1xl mx-auto">
-        <div className="antialiased w-full h-full bg-black text-gray-400 font-inter p-10">
+        <div className="antialiased w-full h-full text-gray-400 font-inter p-10">
           <div className="container px-4 mx-auto">
             <div>
               <div id="title" className="text-center my-10">
