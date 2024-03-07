@@ -13,11 +13,6 @@ body.dark-mode {
     h6 {
         color: #007bff;
     }
-    nav {
-        a {
-            color: #fff;
-        }
-    }
     .contact-page {
         ul {
             color: #666;
@@ -65,13 +60,6 @@ p {
 li {
     list-style-type: disc;
     padding: 5px !important;
-}
-
-nav {
-    a {
-        color: #333;
-        padding: 10px;
-    }
 }
 
 
