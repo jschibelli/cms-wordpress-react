@@ -20,6 +20,7 @@ module.exports = {
         pathname: `${pathname}/**`, // Pathname from the WordPress API URL, allowing all paths
       },
       { protocol: "https", hostname: "https://vfo.fzi.mybluehost.me/" },
+      { protocol: "https", hostname: "https://intrawebtech.com/" },
       { protocol: "https", hostname: "secure.gravatar.com" },
       { protocol: "https", hostname: "i0.wp.com" },
     ],

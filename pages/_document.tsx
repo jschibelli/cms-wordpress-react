@@ -5,10 +5,6 @@ import MobNavigation from "../components/Mobnav/Mobnav";
 
 export default function Document() {
 
-    const Test = () => {
-      document.write("Test");
-    };
-
   return (
     <Html lang="en">
       <Head />

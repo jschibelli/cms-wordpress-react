@@ -13,7 +13,7 @@ const ResumePage = () => {
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
               <div id="choose" className="w-auto mt-10 px-6">
                 <a
-                  href="#"
+                  href="/John-Schibelli_Resume-March-2024.pdf"
                   className="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
                 >
                   Download Resume
@@ -22,7 +22,7 @@ const ResumePage = () => {
             </div>
           </div>
         </div>
-      <Employers />
+        <Employers />
       </div>
     </div>
   );
