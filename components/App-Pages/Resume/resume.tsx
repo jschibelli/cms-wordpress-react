@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Employers from "../../Employer/employer";
+import "./John-Schibelli_Resume-March-2024.pdf";
 
 const ResumePage = () => {
   return (
