@@ -11,10 +11,10 @@ const ResumePage = () => {
           <div className="col-lg-6 mx-auto max-w-md">
             <p className="lead mb-4">Full-Stack AI Engineer</p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center  ">
-              <div id="choose" className=" mt-10 px-6 max-w-md ">
+              <div id="choose" className=" mt-10 px-6">
                 <a
                   href="../../../docs/John-Schibelli_Resume-March-2024.pdf"
-                  className=" w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
+                  className="w-full block bg-gray-900 font-medium text-xl py-4 rounded-xl hover:shadow-lg transition duration-200 ease-in-out hover:bg-indigo-600 hover:text-white"
                   target="_blank"
                   rel="noreferrer"
                 >
