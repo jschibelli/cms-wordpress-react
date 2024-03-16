@@ -19,7 +19,6 @@ export default function NavbarComponent() {
   const menuItems = [
     "About",
     "Resume",
-    "Hire Me",
     "Blog",
     "Contact",
   ];
@@ -65,11 +64,13 @@ export default function NavbarComponent() {
               Resume
             </Link>
           </NavbarItem>
-          <NavbarItem>
+
+          {/*<NavbarItem>
             <Link href="/hire" color="warning">
               Hire Me
             </Link>
-          </NavbarItem>
+          </NavbarItem> */}
+
           <NavbarItem>
             <Link color="foreground" href="/">
               Blog
@@ -92,11 +93,14 @@ export default function NavbarComponent() {
               Resume
             </Link>
           </NavbarItem>
-          <NavbarItem>
+
+          {/* <NavbarItem>
             <Link className="text-white" href="/hire" aria-current="page">
               Hire Me
             </Link>
-          </NavbarItem>
+          </NavbarItem> */}
+
+
           <NavbarItem>
             <Link className="text-white" href="/">
               Blog
