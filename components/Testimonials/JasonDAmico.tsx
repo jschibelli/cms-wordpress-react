@@ -1,6 +1,6 @@
 
 import React from "react";
-import Styles from "./Testimonials.module.scss";
+import Styles from "./testimonials.module.scss";
 import { User } from "@nextui-org/user";
 
 const JasonDAmico = () => {
