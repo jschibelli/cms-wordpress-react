@@ -42,6 +42,7 @@ const AboutPage = () => {
         <JasonDAmico />
         <JasonDAmico />
         <JasonDAmico />
+        <JasonDAmico />
       </Marquee>
     </div>
   );
