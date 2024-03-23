@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styles from "./navbar.module.scss";
+import Styles from "./navbar.module.scss";
 import {
   Navbar,
   NavbarBrand,
@@ -24,7 +24,7 @@ export default function NavbarComponent() {
   ];
 
   return (
-    <div className={styles.navbar_nav}>
+    <div className={`${Styles.navbar_nav} max-w-1xl mx-auto`}>
       <Navbar
         isBordered
         isMenuOpen={isMenuOpen}
@@ -99,7 +99,6 @@ export default function NavbarComponent() {
               Hire Me
             </Link>
           </NavbarItem> */}
-
 
           <NavbarItem>
             <Link className="text-white" href="/">

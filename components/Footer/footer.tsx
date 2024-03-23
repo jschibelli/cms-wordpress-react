@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../container";
-import { FaGithub, FaLinkedin, FaBriefcase } from "react-icons/fa"; // Ensure you have installed react-icons
+import { FaGithub, FaLinkedin, FaBriefcase, FaFacebook } from "react-icons/fa"; // Ensure you have installed react-icons
 import style from "./footer.module.scss";
 
 export default function Footer() {
@@ -8,31 +8,34 @@ export default function Footer() {
     <footer className={style.site_footer}>
       <Container>
         <div
-          className={`flex flex-col lg:flex-row items-center ${style.footer_container}`}
+          className={`flex flex-col flex-row items-center justify-center ${style.footer_container}`}
         >
           <div
-            className={`${style.footer_left} text-xl lg:text-5xl font-bold tracking-tighter leading-tight text-center mb-10 lg:mb-0 lg:pr-4 lg:w-1/2`}
+            className={`${style.footer_left} text-xl lg:text-4xl font-bold tracking-tighter leading-tight text-center mb-10 lg:mb-0 lg:pr-4 lg:w-1/2 justify-center`}
           >
-            <p></p>
+            <p>
+              Stay Connected - Follow me on social media to get the latest
+              updates and insights.
+            </p>
             {/* Social links and icons */}
             <div className={style.social_links}>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/jschibelli"
                 className={style.social_link}
               >
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/johnschibelli/"
                 className={style.social_link}
               >
                 <FaLinkedin />
               </a>
               <a
-                href="https://upwork.com/freelancers/yourusername"
+                href="https://www.facebook.com/profile.php?id=100073449098025"
                 className={style.social_link}
               >
-                <FaBriefcase />
+                <FaFacebook />
               </a>
             </div>
           </div>

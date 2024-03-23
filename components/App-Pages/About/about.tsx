@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./about.module.scss";
+import Testimonials from "../../Testimonials/Testimonials";
+
 
 const AboutPage = () => {
   const [about, setAbout] = useState(null); // Initialize about as null or an empty object
@@ -25,16 +27,17 @@ const AboutPage = () => {
               <div className="px-4 py-5 my-5 text-center">
                 <h1 className="display-5 fw-bold h1">{about.title.rendered}</h1>
                 <div className="col-lg-6 mx-auto">
-                  <p className="lead mb-4">
-                    {about.acf.lead_in}
-                  </p>
+                  <p className="lead mb-4">{about.acf.lead_in}</p>
                 </div>
               </div>
-          <div dangerouslySetInnerHTML={{ __html: about.content.rendered }} />
+              <div
+                dangerouslySetInnerHTML={{ __html: about.content.rendered }}
+              />
             </div>
           </div>
-          </div>
+        </div>
       )}
+      <Testimonials />
     </div>
   );
 };
