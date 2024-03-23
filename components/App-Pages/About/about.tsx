@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./about.module.scss";
-import Marquee from "react-fast-marquee";
-import JasonDAmico from "../../Testimonials/JasonDAmico";
+import Testimonials from "../../Testimonials/Testimonials";
 
 
 const AboutPage = () => {
@@ -38,12 +37,7 @@ const AboutPage = () => {
           </div>
         </div>
       )}
-      <Marquee className="max-w-1xl mx-auto">
-        <JasonDAmico />
-        <JasonDAmico />
-        <JasonDAmico />
-        <JasonDAmico />
-      </Marquee>
+      <Testimonials />
     </div>
   );
 };

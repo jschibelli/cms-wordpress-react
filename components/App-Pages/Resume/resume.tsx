@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Employers from "../../Employer/employer";
+import Testimonials from "../../Testimonials/Testimonials";
 
 const ResumePage = () => {
   return (
@@ -26,6 +27,7 @@ const ResumePage = () => {
         </div>
         <Employers />
       </div>
+      <Testimonials />
     </div>
   );
 };

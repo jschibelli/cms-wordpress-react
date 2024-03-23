@@ -5,8 +5,7 @@ import { User } from "@nextui-org/user";
 
 const JasonDAmico = () => {
   return (
-
-    <div className={`${Styles.testimonial_item}  max-w-md `}>
+    <div className={`${Styles.testimonial_item}  max-w-xl `}>
       <div className={`${Styles.testimonial_content}`}>
         <p>
           John Schibelli is one of the most stand up, motivated people I know.
@@ -26,7 +25,7 @@ const JasonDAmico = () => {
           }}
         />
       </div>
-      </div>
+    </div>
   );
 };
 

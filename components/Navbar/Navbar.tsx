@@ -81,11 +81,6 @@ export default function NavbarComponent() {
               Contact
             </Link>
           </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="../../testimonials">
-              Contact
-            </Link>
-          </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
           <NavbarItem>

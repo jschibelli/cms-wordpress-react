@@ -12,6 +12,7 @@ import {
   SelectItem,
 } from "@nextui-org/react";
 import { industry } from "./data";
+import Testimonials from "../../Testimonials/Testimonials";
 
 export default function App() {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["text"]));
@@ -99,6 +100,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      <Testimonials />
     </div>
   );
 }

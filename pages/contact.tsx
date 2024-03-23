@@ -11,7 +11,6 @@ const ContactPage = () => {
     <Layout preview={Children}>
       <Container>
         <Contact />
-        <Testimonials />
       </Container>
     </Layout>
   );
