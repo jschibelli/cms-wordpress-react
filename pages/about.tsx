@@ -10,11 +10,6 @@ const About = () => {
     <Layout preview={Children}>
       <Container>
         <AboutPage />
-        <Marquee>
-          <JasonDAmico />
-          <JasonDAmico />
-          <JasonDAmico />
-        </Marquee>
       </Container>
     </Layout>
   );

@@ -1,5 +1,3 @@
-import { Nav, Navbar } from "react-bootstrap";
-import Alert from "../Alert/alert";
 import Footer from "../Footer/footer";
 import Meta from "../Meta/meta";
 import NavbarComponant from "../Navbar/Navbar";
