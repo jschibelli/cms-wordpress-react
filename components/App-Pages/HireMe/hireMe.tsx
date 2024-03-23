@@ -1,6 +1,4 @@
 import React from 'react';
-import './hireMe.module.scss';
-import MaintenancePlans from '../../Plans/Maintanence/maintanence';
 import Pricing from '../../Plans/Pricing/pricing';
 
 const HireMe = () => {
@@ -8,7 +6,6 @@ const HireMe = () => {
     <div className="hire-me">
       <div className="max-w-6xl mx-auto">
         <Pricing />
-
       </div>
     </div>
   );
