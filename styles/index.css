@@ -4,7 +4,7 @@
 
 body.dark-mode {
     background-color: #050e15;
-    color: #666;
+    color: #d3d0d0;
     h1,
     h2,
     h3,
@@ -12,11 +12,6 @@ body.dark-mode {
     h5,
     h6 {
         color: #007bff;
-    }
-    .contact-page {
-        ul {
-            color: #666;
-        }
     }
     .lead {
         font-size: 1.3rem;

@@ -3,6 +3,7 @@ import styles from "./about.module.scss";
 import Testimonials from "../../Testimonials/Testimonials";
 
 
+
 const AboutPage = () => {
   const [about, setAbout] = useState(null); // Initialize about as null or an empty object
 

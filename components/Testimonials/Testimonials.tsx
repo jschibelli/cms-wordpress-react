@@ -1,8 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import JasonDAmico from "./JasonDAmico";
-import WalidElshahed from "./WalidElshahed";
-import JoshuaTrujillo from "./JoshuaTrujillo";
+import Testimonial from "./testimonial";
 
 const Testimonials = () => {
   return (
@@ -19,9 +17,7 @@ const Testimonials = () => {
       </div>
 
       <Marquee>
-        <JasonDAmico />
-        <WalidElshahed />
-        <JoshuaTrujillo />
+        <Testimonial />
       </Marquee>
     </div>
   );
