@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import Testimonial from "./testimonial";
+import Testimonial from "./Testimonial";
 
 const Testimonials = () => {
   return (
