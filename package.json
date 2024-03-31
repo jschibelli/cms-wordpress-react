@@ -27,6 +27,7 @@
         "keep-react": "^1.2.0",
         "mongoose": "^8.2.2",
         "next": "latest",
+        "nodemailer": "^6.9.13",
         "phosphor-react": "^1.4.1",
         "react": "^18.2.0",
         "react-bootstrap": "^2.10.2",
