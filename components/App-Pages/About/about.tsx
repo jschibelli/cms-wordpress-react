@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "./about.module.scss";
 import Testimonials from "../../Carousels/Testimonials/Testimonials";
 
-
-
 const AboutPage = () => {
   const [about, setAbout] = useState(null); // Initialize about as null or an empty object
 
@@ -38,7 +36,6 @@ const AboutPage = () => {
           </div>
         </div>
       )}
-      <Testimonials />
     </div>
   );
 };

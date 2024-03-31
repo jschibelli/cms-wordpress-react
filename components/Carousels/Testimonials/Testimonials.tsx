@@ -1,6 +1,10 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import Testimonial from "./Testimonial";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "next/image";
+import Styles from "./testimonials.module.scss";
+import { User } from "@nextui-org/user";
+import testimonial from "./data-testimonies";
 
 const Testimonials = () => {
   return (
@@ -15,7 +19,25 @@ const Testimonials = () => {
           outcomes forged through our joint endeavors.
         </p>
       </div>
-      <Testimonial />
+      <div>
+      {testimonial.map((item) => (
+        <div
+          key={item.userId}
+          className={`${Styles.testimonial_item} max-w-md`}
+        >
+          <div className={`${Styles.testimonial_content}`}>{item.content}</div>
+          <div className={`${Styles.testimonial_meta}`}>
+            <User
+              name={item.name}
+              description={item.description}
+              avatarProps={{
+                src: item.avatarProps.src,
+              }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
     </div>
   );
 };

@@ -27,7 +27,6 @@ const ResumePage = () => {
         </div>
         <Employers />
       </div>
-      <Testimonials />
     </div>
   );
 };

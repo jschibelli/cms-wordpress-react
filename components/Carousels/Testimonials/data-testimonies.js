@@ -1,4 +1,4 @@
-const testimonial = [
+const testimonial_Data = [
   {
     userId: 1,
     content:
@@ -29,7 +29,6 @@ const testimonial = [
       src: "https://media.licdn.com/dms/image/D4D03AQG717x-p356AA/profile-displayphoto-shrink_200_200/0/1703867939567?e=1716422400&v=beta&t=ZBMm3kESbh4rkZvoEekkwGbzzqSQVInop-NFB1SmBVc",
     },
   },
-  // Add more objects following the same schema as needed
 ];
 
-export default testimonial;
+export default testimonial_Data;
