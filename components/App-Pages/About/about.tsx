@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./about.module.scss";
-import Testimonials from "../../Testimonials/Testimonials";
+import Testimonials from "../../Carousels/Testimonials/Testimonials";
 
 
 

@@ -6,7 +6,7 @@ const testimonial = [
     name: "Jason D'Amico",
     description: "Senior Web Developer",
     avatarProps: {
-      src: "https://media.licdn.com/dms/image/D4E35AQG7AZhNz0MtUw/profile-framedphoto-shrink_800_800/0/1707920449142?e=1711821600&v=beta&t=zD3AGdYgi7xclh3IIV31GxAEeQJwzA4_XFtm3jShZQM",
+      src: "https://media.licdn.com/dms/image/D4E35AQG7AZhNz0MtUw/profile-framedphoto-shrink_800_800/0/1707920449142?e=1712448000&v=beta&t=4nyn0OmBDLtJChi2-0H7aV0bC1JEPzvNN-VygE1OMm0",
     },
   },
   {

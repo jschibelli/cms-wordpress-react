@@ -12,7 +12,7 @@ import {
   SelectItem,
 } from "@nextui-org/react";
 import { industry } from "./data";
-import Testimonials from "../../Testimonials/Testimonials";
+import Testimonials from "../../Carousels/Testimonials/Testimonials";
 
 export default function App() {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["text"]));

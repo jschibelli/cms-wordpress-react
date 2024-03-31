@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Employers from "../../Employer/employer";
-import Testimonials from "../../Testimonials/Testimonials";
+import Testimonials from "../../Carousels/Testimonials/Testimonials";
 
 const ResumePage = () => {
   return (

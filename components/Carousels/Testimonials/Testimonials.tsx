@@ -15,10 +15,7 @@ const Testimonials = () => {
           outcomes forged through our joint endeavors.
         </p>
       </div>
-
-      <Marquee>
-        <Testimonial />
-      </Marquee>
+      <Testimonial />
     </div>
   );
 };

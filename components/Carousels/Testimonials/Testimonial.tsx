@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./testimonials.module.scss";
 import { User } from "@nextui-org/user";
-import testimonial from "./data";
+import testimonial from "./data-testimonies";
 
 const Testimonial = () => {
   return (
