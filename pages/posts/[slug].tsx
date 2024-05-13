@@ -39,14 +39,15 @@ export default function Post({ post, posts, preview }) {
                 <meta property="og:type" content="article" />
                 <meta
                   property="og:url"
-                  content={`https://yourdomain.com${router.asPath}`}
+                  content={`https://schibelli.com${router.asPath}`}
                 />
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.excerpt} />
                 <meta
                   property="og:image"
                   content={
-                    post.featuredImage?.node?.sourceUrl || "fallback-image-url"
+                    post.featuredImage?.node?.sourceUrl ||
+                    "https://schibelli.com/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fvfo.fzi.mybluehost.me%2Fwp-content%2Fuploads%2F2024%2F05%2FOpenaivsGoogle.webp%3Ffit%3D1792%252C1024%26ssl%3D1&w=3840&q=75"
                   }
                 />
 
@@ -54,14 +55,15 @@ export default function Post({ post, posts, preview }) {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta
                   property="twitter:url"
-                  content={`https://yourdomain.com${router.asPath}`}
+                  content={`https://schibelli.com${router.asPath}`}
                 />
                 <meta property="twitter:title" content={post.title} />
                 <meta property="twitter:description" content={post.excerpt} />
                 <meta
                   property="twitter:image"
                   content={
-                    post.featuredImage?.node?.sourceUrl || "fallback-image-url"
+                    post.featuredImage?.node?.sourceUrl ||
+                    "https://schibelli.com/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fvfo.fzi.mybluehost.me%2Fwp-content%2Fuploads%2F2024%2F05%2FOpenaivsGoogle.webp%3Ffit%3D1792%252C1024%26ssl%3D1&w=3840&q=75"
                   }
                 />
               </Head>
