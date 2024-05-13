@@ -47,7 +47,7 @@ export default function Post({ post, posts, preview }) {
                   property="og:image"
                   content={
                     post.featuredImage?.node?.sourceUrl ||
-                    "https://schibelli.com/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fvfo.fzi.mybluehost.me%2Fwp-content%2Fuploads%2F2024%2F05%2FOpenaivsGoogle.webp%3Ffit%3D1792%252C1024%26ssl%3D1&w=3840&q=75"
+                    "http://vfo.fzi.mybluehost.me/wp-content/uploads/2024/03/cropped-OIG.jpg"
                   }
                 />
 
@@ -63,7 +63,7 @@ export default function Post({ post, posts, preview }) {
                   property="twitter:image"
                   content={
                     post.featuredImage?.node?.sourceUrl ||
-                    "https://schibelli.com/_next/image?url=https%3A%2F%2Fi0.wp.com%2Fvfo.fzi.mybluehost.me%2Fwp-content%2Fuploads%2F2024%2F05%2FOpenaivsGoogle.webp%3Ffit%3D1792%252C1024%26ssl%3D1&w=3840&q=75"
+                    "https://schibelli.com/default-twitter-image.jpg"
                   }
                 />
               </Head>
