@@ -59,11 +59,11 @@ export async function getAllPostsWithSlug() {
   return data?.posts;
 }
 
-export async function getAllPostsForHome(preview) {
+export async function getAllPostsForHome(preview, page = 1, limit = 10) {
   const data = await fetchAPI(
     `
-    query AllPosts {
-      posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+    query AllPosts($first: Int!, $after: String) {
+      posts(first: $first, after: $after, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
           node {
             title
@@ -87,19 +87,26 @@ export async function getAllPostsForHome(preview) {
             }
           }
         }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
       }
     }
   `,
     {
       variables: {
+        first: limit,
+        after: `${(page - 1) * limit}`, // Ensure 'after' is correctly implemented based on your backend's pagination mechanism
         onlyEnabled: !preview,
         preview,
       },
-    },
+    }
   );
 
-  return data?.posts;
+  return data.posts;
 }
+
 
 export async function getPostAndMorePosts(slug, preview, previewData) {
   const postPreview = preview && previewData?.post;

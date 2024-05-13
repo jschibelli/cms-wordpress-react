@@ -34,7 +34,6 @@ export default function Post({ post, posts, preview }) {
               <Head>
                 <title>{post.title}</title>
                 <meta name="description" content={post.excerpt} />
-
                 {/* Open Graph / Facebook */}
                 <meta property="og:type" content="article" />
                 <meta
@@ -47,10 +46,11 @@ export default function Post({ post, posts, preview }) {
                   property="og:image"
                   content={
                     post.featuredImage?.node?.sourceUrl ||
-                    "http://vfo.fzi.mybluehost.me/wp-content/uploads/2024/03/cropped-OIG.jpg"
+                    "https://schibelli.com/default-og-image.jpg"
                   }
                 />
-
+                <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID" /> //
+                Replace YOUR_FACEBOOK_APP_ID with your actual Facebook App ID
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta
