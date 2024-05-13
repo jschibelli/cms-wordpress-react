@@ -32,12 +32,37 @@ export default function Post({ post, posts, preview }) {
           <>
             <article>
               <Head>
-                <title>
-                  {`${post.title} | Next.js Blog Example with ${CMS_NAME}`}
-                </title>
+                <title>{post.title}</title>
+                <meta name="description" content={post.excerpt} />
+
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="article" />
+                <meta
+                  property="og:url"
+                  content={`https://yourdomain.com${router.asPath}`}
+                />
+                <meta property="og:title" content={post.title} />
+                <meta property="og:description" content={post.excerpt} />
                 <meta
                   property="og:image"
-                  content={post.featuredImage?.node.sourceUrl}
+                  content={
+                    post.featuredImage?.node?.sourceUrl || "fallback-image-url"
+                  }
+                />
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta
+                  property="twitter:url"
+                  content={`https://yourdomain.com${router.asPath}`}
+                />
+                <meta property="twitter:title" content={post.title} />
+                <meta property="twitter:description" content={post.excerpt} />
+                <meta
+                  property="twitter:image"
+                  content={
+                    post.featuredImage?.node?.sourceUrl || "fallback-image-url"
+                  }
                 />
               </Head>
               <PostHeader
