@@ -4,8 +4,12 @@ import style from "./about.module.scss";
 
 const Bio = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start p-4 md:p-8 max-w-6xl mx-auto ">
-      <div className="md:w-1/3 flex flex-col items-center md:items-start mb-4 md:mb-0 ">
+    <div
+      className={`${style.bio_container} page_container flex flex-col md:flex-row items-start p-4 md:p-8 max-w-6xl mx-auto`}
+    >
+      <div
+        className={`${style.bio_card} md:w-1/3 flex flex-col items-center md:items-start sm:items-center mb-4 md:mb-0 `}
+      >
         <img
           src="http://intrawebtech.com/wp-content/uploads/2024/05/headshot.jpg"
           alt="John Schibelli"
@@ -41,9 +45,9 @@ const Bio = () => {
         <p className="mb-4">
           John Schibelli is a distinguished Full Stack Web Developer with a rich
           history of impactful contributions to the tech industry. Since joining
-          Intraweb Technologies in April 2024, where he serves as the owner and
-          president, John has demonstrated unparalleled expertise in SQL Server
-          and Nest.js, solidifying his reputation as a leading developer in his
+          Intraweb Technology in October 2020, where he serves as the owner and
+          president, John has demonstrated unparalleled expertise in web
+          development, solidifying his reputation as a leading developer in his
           field. His innovative approach and dedication to excellence are
           evident through his creation of Schibelli.com, a modern, dynamic
           platform showcasing his mastery in NEXT.js, React, and GraphQL.

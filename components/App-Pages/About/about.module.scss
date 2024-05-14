@@ -23,6 +23,23 @@
     line-height: 1.5;
 }
 
+.bio_container {
+    padding: 4rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.bio_card {
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 2rem;
+        ;
+    }
+}
+
 .social_links {
     display: flex;
     justify-content: center;

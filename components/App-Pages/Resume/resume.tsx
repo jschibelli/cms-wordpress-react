@@ -2,10 +2,11 @@ import React from "react";
 import { Button } from "@nextui-org/react";
 import Employers from "../../Employer/employer";
 import Testimonials from "../../Carousels/Testimonials/Testimonials";
+import style from "./resume.module.scss";
 
 const ResumePage = () => {
   return (
-    <div className="resume-page">
+    <div className={`${style.resume_container}`}>
       <div className="max-w-6xl mx-auto ">
         <div className="px-4 py-5 my-5 text-center">
           <h1 className="display-5 fw-bold h1">John Schibelli</h1>
