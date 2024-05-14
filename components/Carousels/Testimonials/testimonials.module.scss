@@ -2,7 +2,7 @@
     position: relative;
     margin: auto;
     padding: 4rem 1rem;
-    width: 50%;
+    width: 35%;
 }
 
 @media screen and (max-width: 768px) {
@@ -62,15 +62,15 @@
 }
 
 .testimonial_content:before {
-    content: "";
+    content: '\201c';
     position: absolute;
     left: 5%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 150px;
     font-family: "sans-serif";
     font-weight: 900;
-    color: #e1e1e1;
+    color: #007bff;
 }
 
 .testimonial_content:after {
