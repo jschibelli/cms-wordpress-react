@@ -2,9 +2,6 @@ import Avatar from "../Avatar/avatar";
 import Date from "../Date/date";
 import CoverImage from "../Cover-image/cover-image";
 import Link from "next/link";
-import { FacebookShareButton, LinkedinShareButton, TwitterShareButton, FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
-
-
 
 export default function PostPreview({
   title,
@@ -14,8 +11,6 @@ export default function PostPreview({
   author,
   slug,
 }) {
-  const shareUrl = `https://schibelli.com/posts/${slug}`; // Replace 'yourdomain.com' with your actual domain name
-
   return (
     <div>
       <div className="mb-5">
@@ -38,21 +33,6 @@ export default function PostPreview({
         dangerouslySetInnerHTML={{ __html: excerpt }}
       />
       <Avatar author={author} />
-      <div className="social-share-buttons">
-        <FacebookShareButton url={shareUrl} hashtag="#SchibelliBlog">
-          <FacebookIcon size={32} round />
-        </FacebookShareButton>
-        <TwitterShareButton url={shareUrl} title={title}>
-          <TwitterIcon size={32} round />
-        </TwitterShareButton>
-        <LinkedinShareButton
-          url={shareUrl}
-          summary={excerpt}
-          source="YourDomain"
-        >
-          <LinkedinIcon size={32} round />
-        </LinkedinShareButton>
-      </div>
     </div>
   );
 }
