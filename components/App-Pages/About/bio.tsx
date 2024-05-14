@@ -1,19 +1,39 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaBriefcase, FaFacebook } from "react-icons/fa"; // Ensure you have installed react-icons
+import style from "./about.module.scss";
 
 const Bio = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start p-4 md:p-8">
-      <div className="md:w-1/3 flex flex-col items-center md:items-start mb-4 md:mb-0">
+    <div className="flex flex-col md:flex-row items-start p-4 md:p-8 max-w-6xl mx-auto ">
+      <div className="md:w-1/3 flex flex-col items-center md:items-start mb-4 md:mb-0 ">
         <img
-          src="path/to/your/image.jpg"
+          src="http://intrawebtech.com/wp-content/uploads/2024/05/headshot.jpg"
           alt="John Schibelli"
-          className="rounded-full w-48 h-48 object-cover mb-4"
+          className="rounded-full w-48 h-48 object-cover mb-4 "
         />
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-center">
           <h3 className="text-xl font-bold">John Schibelli</h3>
-          <p className="text-sm">
-            Full Stack Web Developer & President of Intraweb Technologies
-          </p>
+          <p className="text-sm">Full Stack Web Developer</p>
+          <div className={style.social_links}>
+            <a
+              href="https://github.com/jschibelli"
+              className={style.social_link}
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/johnschibelli/"
+              className={style.social_link}
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100073449098025"
+              className={style.social_link}
+            >
+              <FaFacebook />
+            </a>
+          </div>
         </div>
       </div>
       <div className="md:w-2/3">
@@ -29,13 +49,12 @@ const Bio = () => {
           platform showcasing his mastery in NEXT.js, React, and GraphQL.
         </p>
         <p className="mb-4">
-          A graduate of Bloomfield High School, John’s journey in the tech world
-          began with a remarkable tenure at CNBC, where he served as an 'On-Air'
-          Graphic Designer. His creative prowess brought life to prominent shows
-          such as 'Morning Call,' 'Wake Up Call,' 'Dennis Miller,' and 'Power
-          Lunch.' This role was a testament to his ability to blend technical
-          skill with artistic vision, a combination that has become his
-          signature style.
+          John’s journey in the tech world began with a remarkable tenure at
+          CNBC, where he served as an 'On-Air' Graphic Designer. His creative
+          prowess brought life to prominent shows such as 'Morning Call,' 'Wake
+          Up Call,' 'Dennis Miller,' and 'Power Lunch.' This role was a
+          testament to his ability to blend technical skill with artistic
+          vision, a combination that has become his signature style.
         </p>
         <p className="mb-4">
           John’s talent extends beyond corporate environments. He was personally

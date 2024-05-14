@@ -6,7 +6,7 @@ import Testimonials from "../../Carousels/Testimonials/Testimonials";
 const ResumePage = () => {
   return (
     <div className="resume-page">
-      <div className="max-w-5xl mx-auto ">
+      <div className="max-w-6xl mx-auto ">
         <div className="px-4 py-5 my-5 text-center">
           <h1 className="display-5 fw-bold h1">John Schibelli</h1>
           <div className="col-lg-6 mx-auto max-w-md">
