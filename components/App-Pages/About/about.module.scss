@@ -22,3 +22,18 @@
     font-weight: 300;
     line-height: 1.5;
 }
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    .social_link {
+        margin: 0 0.5rem;
+        font-size: 2rem; // Example size, adjust as needed
+        color: #666; // Change the color as needed
+        &:hover {
+            color: #666; // Change the hover color as needed
+        }
+    }
+}
