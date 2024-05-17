@@ -65,11 +65,11 @@ export default function NavbarComponent() {
             </Link>
           </NavbarItem>
 
-          {/*<NavbarItem>
+          <NavbarItem>
             <Link href="/hire" color="warning">
-              Hire Me
+              Services
             </Link>
-          </NavbarItem> */}
+          </NavbarItem>
 
           <NavbarItem>
             <Link color="foreground" href="/">
