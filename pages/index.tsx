@@ -1,16 +1,32 @@
 import Head from "next/head";
 import { GetStaticProps } from "next";
+import { useState } from "react";
 import Container from "../components/container";
 import MoreStories from "../components/More-Stories/more-stories";
 import HeroPost from "../components/Hero-Post/hero-post";
 import Intro from "../components/Intro/intro";
 import Layout from "../components/Layout/layout";
 import { getAllPostsForHome } from "../lib/api";
-import { CMS_NAME } from "../lib/constants";
+import PaginationComponent from "../components/Pagination/PaginationComponent";
+
+const POSTS_PER_PAGE = 5;
 
 export default function Index({ allPosts: { edges }, preview }) {
-  const heroPost = edges[0]?.node;
-  const morePosts = edges.slice(1);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handleChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
+  const displayedPosts = edges.slice(
+    (currentPage - 1) * POSTS_PER_PAGE,
+    currentPage * POSTS_PER_PAGE
+  );
+
+  const heroPost = displayedPosts[0]?.node;
+  const morePosts = displayedPosts.slice(1);
+
+  const pageCount = Math.ceil(edges.length / POSTS_PER_PAGE);
 
   return (
     <Layout preview={preview}>
@@ -30,6 +46,11 @@ export default function Index({ allPosts: { edges }, preview }) {
           />
         )}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        <PaginationComponent
+          page={currentPage}
+          count={pageCount}
+          onChange={handleChange}
+        />
       </Container>
     </Layout>
   );
