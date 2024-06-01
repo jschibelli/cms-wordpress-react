@@ -46,6 +46,7 @@ export default function Index({ allPosts: { edges }, preview }) {
           />
         )}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+
         <PaginationComponent
           page={currentPage}
           count={pageCount}

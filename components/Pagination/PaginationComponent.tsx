@@ -1,6 +1,7 @@
 import React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import "./pagination.module.scss"
 
 
 interface PaginationComponentProps {
@@ -16,6 +17,7 @@ const PaginationComponent: React.FC<PaginationComponentProps> = ({
 }) => {
   return (
     <Stack spacing={2}>
+      <div className="pagination">
       <Pagination
         count={count}
         page={page}
@@ -24,7 +26,8 @@ const PaginationComponent: React.FC<PaginationComponentProps> = ({
         hidePrevButton={false}
         color="primary"
         shape="circular"
-      />
+        />
+      </div>
     </Stack>
   );
 };
