@@ -9,6 +9,7 @@ import Layout from "../components/Layout/layout";
 import { getAllPostsForHome } from "../lib/api";
 import PaginationComponent from "../components/Pagination/PaginationComponent";
 
+
 const POSTS_PER_PAGE = 5;
 
 export default function Index({ allPosts: { edges }, preview }) {

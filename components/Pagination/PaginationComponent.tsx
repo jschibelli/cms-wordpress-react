@@ -2,6 +2,7 @@ import React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "./pagination.module.scss"
+import { StyledEngineProvider } from "@mui/material/styles";
 
 
 interface PaginationComponentProps {
@@ -26,6 +27,7 @@ const PaginationComponent: React.FC<PaginationComponentProps> = ({
         hidePrevButton={false}
         color="primary"
         shape="circular"
+        variant="outlined"
         />
       </div>
     </Stack>

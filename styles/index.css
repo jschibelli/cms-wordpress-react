@@ -62,6 +62,17 @@ li {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    li {
+        list-style: none;
+    }
+    button {
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        border: 1px 50px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 
