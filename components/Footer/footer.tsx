@@ -18,7 +18,7 @@ export default function Footer() {
               updates and insights.
             </p>
             {/* Social links and icons */}
-            {/* <div className={style.social_links}>
+            <div className={style.social_links}>
               <a
                 href="https://github.com/jschibelli"
                 className={style.social_link}
@@ -37,7 +37,7 @@ export default function Footer() {
               >
                 <FaFacebook />
               </a>
-            </div> */}
+            </div>
           </div>
           <div
             className={`${style.footer_right} flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2`}
