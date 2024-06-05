@@ -112,41 +112,44 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   const isRevision = isSamePost && postPreview?.status === "publish";
   const data = await fetchAPI(
     `
-fragment PostFields on Post {
-  title
-  excerpt
-  slug
-  date
-  featuredImage {
-    node {
-      sourceUrl
-    }
-  }
-  author {
-    node {
-      ...AuthorFields
-    }
-  }
-  categories {
-    edges {
-      node {
-        name
+    fragment AuthorFields on User {
+      name
+      firstName
+      lastName
+      avatar {
+        url
       }
     }
-  }
-  tags {
-    edges {
-      node {
-        name
+    fragment PostFields on Post {
+      title
+      excerpt
+      slug
+      date
+      featuredImage {
+        node {
+          sourceUrl
+        }
+      }
+      author {
+        node {
+          ...AuthorFields
+        }
+      }
+      categories {
+        edges {
+          node {
+            name
+          }
+        }
+      }
+      tags {
+        edges {
+          node {
+            name
+          }
+        }
       }
     }
-  }
-  ogImage {
-    url
-  }
-  ogDescription
-}
-
     query PostBySlug($id: ID!, $idType: PostIdType!) {
       post(id: $id, idType: $idType) {
         ...PostFields
