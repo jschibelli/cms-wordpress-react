@@ -1,0 +1,132 @@
+.h1 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.ul {
+    padding: 0px;
+    /* Removes default padding */
+    margin: 0 0 24px 20px;
+}
+
+li.li {
+    list-style-type: disk;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    font-family: 'Playfair Display';
+}
+
+.employer .timeline .year .from,
+.employer .timeline .year .to {
+    position: absolute;
+}
+
+.timeline {
+    margin: 15px 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+li.employerList {
+    list-style: none;
+}
+
+.employer ul.timeline li {
+    position: relative;
+    padding: 30px 20px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.timeline li span.lineLeft {
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #0d6efd;
+}
+
+.timeline li span.line-left:before,
+.timeline li span.line-left:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    top: -10px;
+    border: 2px solid #0d6efd;
+}
+
+.timeline li span.line-left:after {
+    top: 100%;
+}
+
+.timeline .year {
+    height: 100%;
+    width: 100%;
+    left: 10px;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0d6efd;
+}
+
+.timeline .year .to {
+    top: -18px;
+    list-style-type: disc;
+    color: #0d6efd;
+    font-weight: 400;
+}
+
+.timeline .year .from {
+    bottom: -18px;
+    color: #0d6efd;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.content {
+    margin-left: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info {
+    margin-left: 1.2rem;
+}
+
+.timeline .content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.employer .timeline .content h4 {
+    // color: #fff;
+}
+
+.employer .timeline .content h5 {
+    margin-top: 6px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+.employer_list_item {
+    margin-top: 0 !important;
+    padding: 0 !important;
+    font-family: 'Playfair Display';
+}

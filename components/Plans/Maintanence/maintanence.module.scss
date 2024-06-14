@@ -1,0 +1,29 @@
+.maintanence {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.maintanence {
+    flex: 1 0 100%;
+}
+
+.cardBody {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Example of a media query for smaller screens */
+
+@media (max-width: 768px) {
+    .maintanence {
+        flex: 1 0 100%;
+        /* Each card takes full width on smaller screens */
+    }
+}
