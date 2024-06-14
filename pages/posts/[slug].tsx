@@ -1,27 +1,29 @@
+import { GetStaticProps, GetStaticPaths } from "next";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import Head from "next/head";
-import { GetStaticPaths, GetStaticProps } from "next";
 import Container from "../../components/container";
-import PostBody from "../../components/Post-Body/post-body";
-import MoreStories from "../../components/More-Stories/more-stories";
+import PostBody from "../../components/Post-Body/post-body"
 import Header from "../../components/Header/header";
 import PostHeader from "../../components/Post-Header/post-header";
-import SectionSeparator from "../../components/Section-Seperator/section-separator";
 import Layout from "../../components/Layout/layout";
+import { getPostAndMorePosts, getAllPostsWithSlug } from "../../lib/api";
 import PostTitle from "../../components/Post-Title/post-title";
-import Tags from "../../components/Tags/tags";
-import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
-import { CMS_NAME } from "../../lib/constants";
+import Head from "next/head";
+import markdownToHtml from "../../lib/markdownToHtml";
+import { PostType } from "../../types/post"; // <-- Correct import statement
+import MoreStories from "../../components/More-Stories/more-stories";
 
-export default function Post({ post, posts, preview }) {
+type Props = {
+  post: PostType;
+  morePosts: PostType[];
+  preview?: boolean;
+};
+
+export default function Post({ post, morePosts, preview }: Props) {
   const router = useRouter();
-  const morePosts = posts?.edges;
-
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-
   return (
     <Layout preview={preview}>
       <Container>
@@ -32,28 +34,26 @@ export default function Post({ post, posts, preview }) {
           <>
             <article>
               <Head>
-                <title>
-                  {`${post.title} | Next.js Blog Example with ${CMS_NAME}`}
-                </title>
-                <meta
-                  property="og:image"
-                  content={post.featuredImage?.node.sourceUrl}
-                />
+                <title>{post.title} | Next.js Blog Example</title>
+                {post.ogImage && (
+                  <meta property="og:image" content={post.ogImage.url} />
+                )}
+                {post.ogDescription && (
+                  <meta
+                    property="og:description"
+                    content={post.ogDescription}
+                  />
+                )}
               </Head>
               <PostHeader
                 title={post.title}
                 coverImage={post.featuredImage}
                 date={post.date}
                 author={post.author}
-                categories={post.categories}
+                categories={post.categories} // Ensure categories is passed
               />
               <PostBody content={post.content} />
-              <footer>
-                {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
-              </footer>
             </article>
-
-            <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
@@ -65,23 +65,25 @@ export default function Post({ post, posts, preview }) {
 export const getStaticProps: GetStaticProps = async ({
   params,
   preview = false,
-  previewData,
 }) => {
-  const data = await getPostAndMorePosts(params?.slug, preview, previewData);
+  const data = await getPostAndMorePosts(params.slug, preview, null);
+  const content = await markdownToHtml(data.post.content || "");
 
   return {
     props: {
       preview,
-      post: data.post,
-      posts: data.posts,
+      post: {
+        ...data.post,
+        content,
+      },
+      morePosts: data.posts,
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug();
-
   return {
     paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
     fallback: true,
