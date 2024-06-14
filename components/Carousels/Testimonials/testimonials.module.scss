@@ -1,0 +1,105 @@
+.testimonialCarouselContainer {
+    position: relative;
+    margin: auto;
+    padding: 4rem 1rem;
+    width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonialCarouselContainer {
+        width: 100%;
+    }
+}
+
+.testimonialItem {
+    display: none;
+    transition: all 0.5s ease;
+    position: relative;
+    // padding: 45px;
+    display: inline-block;
+}
+
+.testimonialItem.active {
+    display: block;
+}
+
+.carouselIndicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carouselIndicator {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    display: block;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carouselIndicator.activeIndicator {
+    background-color: #007bff;
+}
+
+.testimonial_content {
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 20px;
+    font-size: 14px;
+    position: relative;
+    background-color: #17181B;
+    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.testimonial_content p {
+    margin-bottom: 0;
+}
+
+.testimonial_content:before {
+    content: '\201c';
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 150px;
+    font-family: "sans-serif";
+    font-weight: 900;
+    color: #007bff;
+}
+
+.testimonial_content:after {
+    position: absolute;
+    content: "";
+    left: 15px;
+    top: 100%;
+    transform: translateX(100%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 11px solid #17181B;
+}
+
+.testimonial_meta {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.testimonial_meta img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 20px 0 20px 0;
+}
+
+.meta_info h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}

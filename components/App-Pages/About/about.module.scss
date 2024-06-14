@@ -1,0 +1,56 @@
+.h1 {
+    text-align: center;
+    // color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+.ul {
+    padding: 0px;
+    /* Removes default padding */
+    margin: 0 0 24px 20px;
+}
+
+.li {
+    list-style-type: disk;
+}
+
+.lead {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.bio_container {
+    padding: 4rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.bio_card {
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 2rem;
+        ;
+    }
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    .social_link {
+        margin: 0 0.5rem;
+        font-size: 2rem; // Example size, adjust as needed
+        color: #666; // Change the color as needed
+        &:hover {
+            color: #666; // Change the hover color as needed
+        }
+    }
+}
